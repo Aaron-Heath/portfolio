@@ -62,7 +62,7 @@ header li a {
 .content-left {
     display: flex;
     flex: 1;
-    border: 3px dotted var(--dbl);
+    border-right: 5px solid var(--dbl);
 }
 
 .content-right {
@@ -78,12 +78,14 @@ header li a {
     border: var(--lbl) solid 5px;
     flex: 0 0 45%;
     margin: 1.25% 1.875%;
+    height: 125px;
     
 }
 
 .feature {
-    flex: 0 0 95%;
+    flex: 1 1 95%;
     margin: 1.25%;
+    height: 400px;
 }
 
 #about-me {
