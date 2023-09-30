@@ -42,6 +42,10 @@ header li a {
     margin: 10px;
 }
 
+.hero {
+    height: 175px;
+}
+
 
 /* Main Content */
 .container {
