@@ -60,13 +60,30 @@ header li a {
 }
 
 .content-left {
+    display: flex;
     flex: 1;
     border: 3px dotted var(--dbl);
 }
 
 .content-right {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     flex: 2;
     border: 3px dotted orange;
+}
+
+.card {
+    position: relative;
+    border: var(--lbl) solid 5px;
+    flex: 0 0 45%;
+    margin: 1.25% 1.875%;
+    
+}
+
+.feature {
+    flex: 0 0 95%;
+    margin: 1.25%;
 }
 
 #about-me {
