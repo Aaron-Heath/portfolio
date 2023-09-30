@@ -91,6 +91,7 @@ header li a {
 
 .content-right p {
     margin: 7px 0;
+    color: var(--dbl);
 }
 
 .card {
