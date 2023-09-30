@@ -80,8 +80,8 @@ header li a {
 .card {
     position: relative;
     border: var(--lbl) solid 5px;
-    flex: 0 0 45%;
-    margin: 1.25% 1.875%;
+    flex: 0 0 46.1%;
+    margin: 1.25% 1.4%;
     height: 125px;
     background-size: cover;
     background-repeat: no-repeat;
