@@ -92,6 +92,39 @@ header li a {
     height: 400px;
 }
 
+.card::before {
+    content:"Box 1 Text";
+    background: var(--lbl);
+    color:var(--dbl);
+    font-weight: bold;
+    font-size: 20px;
+    padding: 4px;
+    height: 40px;
+
+    position: absolute;
+    bottom: 25px;
+}
+
+/* Card subtitles */
+.card::after {
+    position: absolute;
+    bottom: 25px;
+    /* background: var(--lbl); */
+    color:var(--dbl);
+
+    /* font-weight: bold; */
+    font-size: 12px;
+    padding: 4px;
+}
+
+#prework-study-guide::before {
+    content:"Prework Study Guide"
+}
+
+#prework-study-guide::after {
+    content:"HTML/CSS"
+}
+
 #about-me {
     background-color: cyan;
 }
@@ -104,23 +137,21 @@ header li a {
     background-color: green;
 }
 
+
+/* Background Images */
+.code-bg {
+    background-image: url('../images/code_image.jpg');
+    background-size: auto;
+    background-repeat: no-repeat;
+}
+
 /* #box1 {
     width: 200px;
     position: relative;
     border: var(--lbl) solid 5px;
 }
 
-#box1::before {
-    content:"Box 1 Text";
-    background: var(--lbl);
-    color:var(--dbl);
-    font-weight: bold;
-    font-size: 20px;
-    padding: 4px;
 
-    position: absolute;
-    bottom: 25px;
-}
 
 #project1 {
     max-width: 100%;
