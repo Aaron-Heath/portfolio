@@ -109,10 +109,8 @@ header li a {
 .card::after {
     position: absolute;
     bottom: 25px;
-    /* background: var(--lbl); */
     color:var(--dbl);
 
-    /* font-weight: bold; */
     font-size: 12px;
     padding: 4px;
 }
@@ -130,7 +128,6 @@ header li a {
 }
 
 #work {
-    /* background-color: purple; */
 }
 
 #contact {
@@ -144,16 +141,3 @@ header li a {
     background-size: auto;
     background-repeat: no-repeat;
 }
-
-/* #box1 {
-    width: 200px;
-    position: relative;
-    border: var(--lbl) solid 5px;
-}
-
-
-
-#project1 {
-    max-width: 100%;
-    height: auto;
-} */
