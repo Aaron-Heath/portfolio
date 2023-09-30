@@ -80,9 +80,12 @@ header li a {
 .card {
     position: relative;
     border: var(--lbl) solid 5px;
-    flex: 0 0 45%;
-    margin: 1.25% 1.875%;
+    flex: 0 0 46.1%;
+    margin: 1.25% 1.4%;
     height: 125px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     
 }
 
@@ -92,37 +95,118 @@ header li a {
     height: 400px;
 }
 
-#about-me {
-    background-color: cyan;
+
+/* Overlay Behavior */
+.overlay {
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(55, 71, 95, 0.6);
+    opacity: .4;
+    transition: 0.5s;
 }
 
-#work {
-    /* background-color: purple; */
+.card:hover .overlay {
+    opacity: 1;
+    transition: 0.5s;
 }
 
-#contact {
-    background-color: green;
-}
-
-/* #box1 {
-    width: 200px;
-    position: relative;
-    border: var(--lbl) solid 5px;
-}
-
-#box1::before {
+/* Card Titles and Subtitles */
+.card::before {
     content:"Box 1 Text";
     background: var(--lbl);
     color:var(--dbl);
     font-weight: bold;
     font-size: 20px;
     padding: 4px;
+    height: 40px;
 
     position: absolute;
     bottom: 25px;
+    z-index: 100;
 }
 
-#project1 {
-    max-width: 100%;
-    height: auto;
-} */
+.card::after {
+    position: absolute;
+    bottom: 25px;
+    color:var(--dbl);
+
+    font-size: 12px;
+    padding: 4px;
+    z-index: 100;
+}
+
+#project-1::before {
+    content:"Prework Study Guide"
+}
+
+#project-1::after {
+    content:"HTML/CSS"
+}
+
+#project-2::before {
+    content:"Coming Soon"
+}
+
+#project-2::after {
+    content:"Dropwizard/Angular"
+}
+
+#project-3::before {
+    content:"Horiseon Code Refactor"
+}
+
+#project-3::after {
+    content:"HTML/CSS"
+}
+
+#project-4::before {
+    content:"Coming Soon"
+}
+
+#project-4::after {
+    content:"HTML/CSS/JavaScript"
+}
+
+#project-5::before {
+    content:"Coming Soon"
+}
+
+#project-5::after {
+    content:"Node.js/SQL"
+}
+
+#about-me {
+    background-color: cyan;
+}
+
+#work {
+}
+
+#contact {
+    background-color: green;
+}
+
+
+/* Background Images */
+#project-1 {
+    background-image: url('../images/code_image.jpg'); /*Image source: https://pixabay.com/photos/code-programming-hacking-html-web-820275/ */
+}
+
+#project-2 {
+    background-image: url('../images/sunflower.jpg'); /*Image Source: https://pixabay.com/photos/sunflower-flower-plant-petals-1127174/*/
+}
+
+#project-3 {
+    background-image: url('../images/code-refactor.png');
+
+}
+
+#project-4 {
+    background-image: url('../images/board.jpg'); /* Image Source: https://pixabay.com/photos/board-electronics-computer-453758/ */
+}
+
+#project-5 {
+    background-image: url('../images/smart-home.jpg'); /* Image Source: https://pixabay.com/photos/smart-home-house-technology-3396205/ */
+}
