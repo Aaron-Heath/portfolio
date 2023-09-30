@@ -95,6 +95,24 @@ header li a {
     height: 400px;
 }
 
+
+/* Overlay Behavior */
+.overlay {
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(55, 71, 95, 0.6);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.card:hover .overlay {
+    opacity: 1;
+    transition: 0.5s;
+}
+
+/* Card Titles and Subtitles */
 .card::before {
     content:"Box 1 Text";
     background: var(--lbl);
@@ -106,9 +124,9 @@ header li a {
 
     position: absolute;
     bottom: 25px;
+    z-index: 100;
 }
 
-/* Card Titles and Subtitles */
 .card::after {
     position: absolute;
     bottom: 25px;
@@ -116,6 +134,7 @@ header li a {
 
     font-size: 12px;
     padding: 4px;
+    z-index: 100;
 }
 
 #project-1::before {
