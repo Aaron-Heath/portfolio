@@ -118,11 +118,11 @@ header li a {
     padding: 4px;
 }
 
-#prework-study-guide::before {
+#project-1::before {
     content:"Prework Study Guide"
 }
 
-#prework-study-guide::after {
+#project-1::after {
     content:"HTML/CSS"
 }
 
@@ -171,11 +171,11 @@ header li a {
 
 
 /* Background Images */
-.code-bg {
+#project-1 {
     background-image: url('../images/code_image.jpg'); /*Image source: https://pixabay.com/photos/code-programming-hacking-html-web-820275/ */
 }
 
-.sunflower-bg {
+#project-2 {
     background-image: url('../images/sunflower.jpg'); /*Image Source: https://pixabay.com/photos/sunflower-flower-plant-petals-1127174/*/
 }
 
