@@ -83,6 +83,9 @@ header li a {
     flex: 0 0 45%;
     margin: 1.25% 1.875%;
     height: 125px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     
 }
 
@@ -105,7 +108,7 @@ header li a {
     bottom: 25px;
 }
 
-/* Card subtitles */
+/* Card Titles and Subtitles */
 .card::after {
     position: absolute;
     bottom: 25px;
@@ -123,6 +126,38 @@ header li a {
     content:"HTML/CSS"
 }
 
+#project-2::before {
+    content:"Coming Soon"
+}
+
+#project-2::after {
+    content:"Dropwizard/Angular"
+}
+
+#project-3::before {
+    content:"Horiseon Code Refactor"
+}
+
+#project-3::after {
+    content:"HTML/CSS"
+}
+
+#project-4::before {
+    content:"Coming Soon"
+}
+
+#project-4::after {
+    content:"HTML/CSS/JavaScript"
+}
+
+#project-5::before {
+    content:"Coming Soon"
+}
+
+#project-5::after {
+    content:"Node.js/SQL"
+}
+
 #about-me {
     background-color: cyan;
 }
@@ -137,7 +172,22 @@ header li a {
 
 /* Background Images */
 .code-bg {
-    background-image: url('../images/code_image.jpg');
-    background-size: auto;
-    background-repeat: no-repeat;
+    background-image: url('../images/code_image.jpg'); /*Image source: https://pixabay.com/photos/code-programming-hacking-html-web-820275/ */
+}
+
+.sunflower-bg {
+    background-image: url('../images/sunflower.jpg'); /*Image Source: https://pixabay.com/photos/sunflower-flower-plant-petals-1127174/*/
+}
+
+#project-3 {
+    background-image: url('../images/code-refactor.png');
+
+}
+
+#project-4 {
+    background-image: url('../images/board.jpg'); /* Image Source: https://pixabay.com/photos/board-electronics-computer-453758/ */
+}
+
+#project-5 {
+    background-image: url('../images/smart-home.jpg'); /* Image Source: https://pixabay.com/photos/smart-home-house-technology-3396205/ */
 }
