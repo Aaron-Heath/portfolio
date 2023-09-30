@@ -65,14 +65,26 @@ header li a {
 
 .content-left {
     display: flex;
+    justify-content: right;
+    text-align: right;
     flex: 1;
     border-right: 5px solid var(--dbl);
+
+    padding-right: 0 2%;
+}
+
+.content-left h2 {
+    color: var(--dbl);
+    font-size: 50px;
+    margin-right: 20px;
 }
 
 .content-right {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-left: 2%;
+    
     flex: 2;
     border: 3px dotted orange;
 }
@@ -80,8 +92,8 @@ header li a {
 .card {
     position: relative;
     border: var(--lbl) solid 5px;
-    flex: 0 0 46.1%;
-    margin: 1.25% 1.4%;
+    flex: 0 0 47%;
+    margin: 1.5% 0;
     height: 125px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -90,8 +102,8 @@ header li a {
 }
 
 .feature {
-    flex: 1 1 95%;
-    margin: 1.25%;
+    flex: 1 1 100%;
+    /* margin: 1.25%; */
     height: 400px;
 }
 
@@ -181,7 +193,9 @@ header li a {
     background-color: cyan;
 }
 
-#work {
+#work .content-right{
+    display: flex;
+    justify-content: space-between;
 }
 
 #contact {
