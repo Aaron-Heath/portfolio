@@ -21,7 +21,9 @@ THEN I am presented with a responsive layout that adapts to my viewport */
 :root {
     --lbl: #92cbcd;
     --dbl: #445877;
-    --grey: #545c63;
+    --grey: #31363a;
+
+    --hover-transition: 1s;
 }
 
 /* HEADER */
@@ -84,8 +86,8 @@ header a::after {
 .container {
     display: flex;
     border: 2px solid red;
-    height : 100vh;
     flex-wrap: wrap;
+    max-width: 1552px;
 }
 
 .align-center {
@@ -129,7 +131,7 @@ header a::after {
     justify-content: center;
     margin-left: 2%;
     
-    flex: 2;
+    flex: 4;
     border: 3px dotted orange;
 }
 
@@ -143,7 +145,6 @@ header a::after {
     flex: 1;
     flex-wrap: wrap;
     min-width: 400px;
-    /* border: 5px solid red; */
 }
 
 .card {
@@ -156,6 +157,45 @@ header a::after {
     background-repeat: no-repeat;
     background-position: center;
     
+}
+
+.contact {
+    display: flex;
+    flex: 1;
+    border: 2px red dashed;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.contact p {
+    position: relative;
+    color: var(--grey);
+    transition: var(--hover-transition);
+}
+
+.contact a {
+    color: inherit; /* prevent links from changing color */
+}
+
+.contact p:hover {
+    font-size: 25px;
+    transition: var(--hover-transition);
+}
+
+.contact p::after {
+    content:"";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: var(--dbl);
+    bottom: -5px;
+    left: 0;
+    transition: var(--hover-transition);
+}
+
+.contact p:hover:after {
+    height: 1px;
+    transition: var(--hover-transition);
 }
 
 .feature {
@@ -256,7 +296,7 @@ header a::after {
 }
 
 #contact {
-    background-color: green;
+    /* background-color: green; */
 }
 
 #headshot {
