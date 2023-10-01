@@ -87,6 +87,7 @@ header a::after {
     display: flex;
     border: 2px solid red;
     flex-wrap: wrap;
+    max-width: 1552px;
 }
 
 .align-center {
