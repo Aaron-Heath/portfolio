@@ -22,6 +22,8 @@ THEN I am presented with a responsive layout that adapts to my viewport */
     --lbl: #92cbcd;
     --dbl: #445877;
     --grey: #31363a;
+
+    --hover-transition: 1s;
 }
 
 /* HEADER */
@@ -166,7 +168,17 @@ header a::after {
 
 .contact p {
     position: relative;
-    color: var(--grey)
+    color: var(--grey);
+    transition: var(--hover-transition);
+}
+
+.contact a {
+    color: inherit; /* prevent links from changing color */
+}
+
+.contact p:hover {
+    font-size: 25px;
+    transition: var(--hover-transition);
 }
 
 .contact p::after {
@@ -177,6 +189,12 @@ header a::after {
     background-color: var(--dbl);
     bottom: -5px;
     left: 0;
+    transition: var(--hover-transition);
+}
+
+.contact p:hover:after {
+    height: 1px;
+    transition: var(--hover-transition);
 }
 
 .feature {
