@@ -7,8 +7,8 @@ WHEN I click one of the links in the navigation
 THEN the UI scrolls to the corresponding section
 WHEN I click on the link to the section about their work
 THEN the UI scrolls to a section with titled images of the developer's applications
-WHEN I am presented with the developer's first application
-THEN that application's image should be larger in size than the others
+* WHEN I am presented with the developer's first application
+* THEN that application's image should be larger in size than the others
 WHEN I click on the images of the applications
 THEN I am taken to that deployed application
 WHEN I resize the page or view the site on various screens and devices
@@ -53,35 +53,71 @@ header li a {
     border: 2px solid red;
     height : 100vh;
     flex-wrap: wrap;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.justify-center {
     justify-content: center;
 }
 
+.justify-left {
+    justify-content: left;
+}
 /* Content Sections */
 .content-section {
     border: 2px solid yellow;
     display: flex;
     flex: 0 0 90%;
+    margin: 25px 0;
 }
 
 .content-left {
     display: flex;
+    justify-content: right;
+    text-align: right;
     flex: 1;
     border-right: 5px solid var(--dbl);
+
+    padding-right: 0 2%;
+}
+
+.content-left h2 {
+    color: var(--dbl);
+    font-size: 50px;
+    margin-right: 20px;
 }
 
 .content-right {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-left: 2%;
+    
     flex: 2;
     border: 3px dotted orange;
+}
+
+.content-right p {
+    margin: 7px 0;
+    color: var(--dbl);
+}
+
+.content-flex {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    min-width: 400px;
+    /* border: 5px solid red; */
 }
 
 .card {
     position: relative;
     border: var(--lbl) solid 5px;
-    flex: 0 0 46.1%;
-    margin: 1.25% 1.4%;
+    flex: 0 0 47%;
+    margin: 1.5% 0;
     height: 125px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -90,8 +126,8 @@ header li a {
 }
 
 .feature {
-    flex: 1 1 95%;
-    margin: 1.25%;
+    flex: 1 1 100%;
+    /* margin: 1.25%; */
     height: 400px;
 }
 
@@ -178,14 +214,24 @@ header li a {
 }
 
 #about-me {
-    background-color: cyan;
+    /* background-color: cyan; */
 }
 
-#work {
+#work .content-right{
+    display: flex;
+    justify-content: space-between;
 }
 
 #contact {
     background-color: green;
+}
+
+#headshot {
+    object-fit: cover;
+    height: auto;
+    width: auto;
+    height: 400px;
+    width: 400px;
 }
 
 
