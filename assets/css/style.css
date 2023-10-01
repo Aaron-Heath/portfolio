@@ -131,7 +131,7 @@ header a::after {
     justify-content: center;
     margin-left: 2%;
     
-    flex: 2;
+    flex: 4;
     border: 3px dotted orange;
 }
 
