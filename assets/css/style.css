@@ -23,6 +23,7 @@ THEN I am presented with a responsive layout that adapts to my viewport */
     --dbl: #445877;
 }
 
+/* HEADER */
 header {
     background-color: var(--dbl);
     height: 60px;
@@ -40,8 +41,19 @@ header li a {
     font-weight: bold;
     font-size: 20px;
     margin: 10px;
+    text-decoration: none;
+    position: relative;
 }
 
+header a::after {
+    content:"";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: var(--lbl);
+    bottom: -5px;
+    left: 0;
+}
 .hero {
     height: 175px;
 }
