@@ -7,8 +7,8 @@ WHEN I click one of the links in the navigation
 THEN the UI scrolls to the corresponding section
 WHEN I click on the link to the section about their work
 THEN the UI scrolls to a section with titled images of the developer's applications
-WHEN I am presented with the developer's first application
-THEN that application's image should be larger in size than the others
+* WHEN I am presented with the developer's first application
+* THEN that application's image should be larger in size than the others
 WHEN I click on the images of the applications
 THEN I am taken to that deployed application
 WHEN I resize the page or view the site on various screens and devices
@@ -61,6 +61,7 @@ header li a {
     border: 2px solid yellow;
     display: flex;
     flex: 0 0 90%;
+    margin: 25px 0;
 }
 
 .content-left {
@@ -92,6 +93,16 @@ header li a {
 .content-right p {
     margin: 7px 0;
     color: var(--dbl);
+}
+
+.content-flex {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    min-width: 400px;
 }
 
 .card {
@@ -195,7 +206,7 @@ header li a {
 }
 
 #about-me {
-    background-color: cyan;
+    /* background-color: cyan; */
 }
 
 #work .content-right{
@@ -205,6 +216,14 @@ header li a {
 
 #contact {
     background-color: green;
+}
+
+#headshot {
+    object-fit: cover;
+    height: auto;
+    width: auto;
+    height: 400px;
+    width: 400px;
 }
 
 
