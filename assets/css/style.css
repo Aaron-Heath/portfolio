@@ -44,7 +44,6 @@ header {
 #name-block {
     position: relative;
     width: 300px;
-    /* border: 2px red solid; */
     font-size: 20px;
     text-align: right;
     background-color: var(--lbl);
@@ -52,15 +51,7 @@ header {
     padding-right: 20px;
 }
 
-/* #name h1::before {
-    content: "";
-    position: absolute;
-    width: 200px;
-    height: 50px;
-    background-color: var(--lbl);
-    color: var(--dbl);
-    left:0;
-} */
+
 
 header li {
     display: inline;
