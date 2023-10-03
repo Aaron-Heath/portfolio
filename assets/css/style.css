@@ -402,6 +402,10 @@ Extra large screens: 1201px and more
     #contact .content-right {
         flex-direction: column;
     }
+
+    #contact .content-right div {
+        padding: 5px 0;
+    }
     
 }
 
