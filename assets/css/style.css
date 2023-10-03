@@ -349,3 +349,59 @@ Extra large screens: 1201px and more
 1300/900
 
 */
+
+@media screen and (max-width: 1143px) {
+    
+
+    #about-me .content-right {
+        flex-direction: column;
+        align-items: center;
+    }
+    .content-flex {
+        width: 400px;
+    }
+    .content-left h2 {
+        font-size: 40px;
+    }
+
+    .card::before {
+        content:"Box 1 Text";
+        background: var(--lbl);
+        color:var(--dbl);
+        font-weight: bold;
+        font-size: 16px;
+        padding: 4px;
+        height: 40px;
+    
+        position: absolute;
+        bottom: 25px;
+        z-index: 100;
+    }
+    
+    .card::after {
+        position: absolute;
+        bottom: 25px;
+        color:var(--dbl);
+    
+        font-size: 10px;
+        padding: 4px;
+        z-index: 100;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        height: auto;
+        padding: 10px 0;
+    }
+    header li {
+        display: block;
+        margin: 5px 0;
+    }
+
+    #contact .content-right {
+        flex-direction: column;
+    }
+    
+}
+
