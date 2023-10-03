@@ -32,6 +32,7 @@ THEN I am presented with a responsive layout that adapts to my viewport */
     border: 2px solid red;
     flex-wrap: wrap;
     max-width: 1552px;
+    margin: auto;
 }
 
 .content-section {
@@ -332,3 +333,19 @@ header a::after {
 #project-5 {
     background-image: url('../images/smart-home.jpg'); /* Image Source: https://pixabay.com/photos/smart-home-house-technology-3396205/ */
 }
+
+
+/* MEDIA QUERIES 
+Mobile devices: 320px–480px
+Tablets: 481px–768px
+Laptops: 769px–1024px
+Desktops: 1025px–1200px
+Extra large screens: 1201px and more
+
+480 768 992 
+
+992, 768, 480
+
+1300/900
+
+*/
