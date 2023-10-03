@@ -1,6 +1,6 @@
 # My Portfolio
 ## Description
-This repository is a static HTML portfolio for prospective employers to view and see my experience and contact information. My portfolio can be found [here](). The page uses CSS styling, flex box, and media queries to create an interactive and repsonsive experience for the user. 
+This repository is a static HTML portfolio for prospective employers to view and see my experience and contact information. My portfolio can be found [here](https://aaron-heath.github.io/portfolio/). The page uses CSS styling, flex box, and media queries to create an interactive and repsonsive experience for the user. 
 
 See the a screenshot below:
 
