@@ -244,11 +244,11 @@ header a::after {
 }
 
 #project-1::before {
-    content:"Prework Study Guide"
+    content:"LeafLit"
 }
 
 #project-1::after {
-    content:"HTML/CSS"
+    content:"Front End"
 }
 
 #project-2::before {
@@ -292,7 +292,7 @@ header a::after {
 
 /* Background Images */
 #project-1 {
-    background-image: url('../images/code_image.jpg'); /*Image source: https://pixabay.com/photos/code-programming-hacking-html-web-820275/ */
+    background-image: url('../images/aaron-heath.github.io_leaflit_.png'); /*Image source: https://pixabay.com/photos/code-programming-hacking-html-web-820275/ */
 }
 
 #project-2 {
